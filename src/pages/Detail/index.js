@@ -15,6 +15,7 @@ export default function Detail({params}){
             <>
                 <Helmet>
                     <title>Cargando...</title>
+                    <meta name="description" content="Cargando Pagina"></meta>
                 </Helmet>
                 <Spinner />
             </>
@@ -27,6 +28,7 @@ export default function Detail({params}){
     return <>
         <Helmet>
             <title>{title} | Giffy</title>
+            <meta name="description" content={title}></meta>
         </Helmet>
         <h3 className='App-title'>{gif.title}</h3>
         <Gif {...gif} />
